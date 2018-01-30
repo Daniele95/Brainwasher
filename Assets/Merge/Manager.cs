@@ -150,7 +150,7 @@ public class Manager : MonoBehaviour {
             {
                 if (!firstHalcor)   //se firsthalf coroutine non è ancora partito
                     print("ho fatto partire la coroutine halfWay");
-                    StartCoroutine(halfWay(0));
+                    StartCoroutine(halfWay(1));
 
                 //firstHalf = false;
 
@@ -179,10 +179,10 @@ public class Manager : MonoBehaviour {
 
         firstHalcor = true;
         print("ho settato firsthalf core to true");
-        pubblicita[0].SetActive(true);
+        pubblicita[randomAD].SetActive(true);
         yield return new WaitForSeconds(3);
         print("ho finito l'halfway courtine e setto la publblicita to vero ");
-        pubblicita[0].SetActive(false);
+        pubblicita[randomAD].SetActive(false);
 
     }
 
