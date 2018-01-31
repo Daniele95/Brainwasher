@@ -57,7 +57,7 @@
 				col -=( 1-tex2D(_NoiseTex, i.uv2))/2;
 				// apply fog
 				UNITY_APPLY_FOG(i.fogCoord, col);
-				return col;
+				return col/1.8;
 			}
 			ENDCG
 		}
